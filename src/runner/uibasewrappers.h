@@ -271,7 +271,7 @@ struct IModInterfaceWrapper: MOBase::IModInterface, boost::python::wrapper<MOBas
   virtual void setVersion(const MOBase::VersionInfo &version) { this->get_override("setVersion")(version); }
   virtual void setNewestVersion(const MOBase::VersionInfo &version) { this->get_override("setNewestVersion")(version); }
   virtual void setIsEndorsed(bool endorsed) { this->get_override("setIsEndorsed")(endorsed); }
-  virtual void setNexusID(int nexusID) { this->get_override("setNexusID")(nexusID); }
+  virtual void setRepoModID(int nexusID) { this->get_override("setNexusID")(nexusID); }
   virtual void setInstallationFile(const QString &fileName) { this->get_override("setInstallationFile")(fileName); }
   virtual void addNexusCategory(int categoryID) { this->get_override("addNexusCategory")(categoryID); }
   virtual bool setName(const QString &name) { return this->get_override("setName")(name); }
